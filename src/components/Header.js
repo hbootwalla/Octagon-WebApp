@@ -5,17 +5,22 @@ import './Header.css';
 class Header extends Component {
   render() {
     return (
-        <nav className="navbar navbar-toggleable-md navbar-expand-lg fixed-top">
-            
-        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        <nav className="navbar navbar-default fixed-top">
+        <div className="container-fluid">
+        <div className="navbar-header">
+        <button className="navbar-toggle navbar-toggle-right collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+            <span className="sr-only">Toggle navigation</span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
         </button>
         <a className="navbar-brand" href="/">
-            <img className="d-inline-block align-top" width="150" height="50" src={require("../assets/images/brand.png")} alt="" />
+             
         </a>
+        </div>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
+          <ul className="nav navbar-nav navbar-right">
             <li className="nav-item">
               <Link to='/' className="nav-link">Home</Link>
             </li>
@@ -23,6 +28,7 @@ class Header extends Component {
                 <Link to='/contact' className="nav-link">Contact</Link>
             </li>
           </ul>
+        </div>
         </div>
       </nav>
     );
