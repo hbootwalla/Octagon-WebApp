@@ -16,7 +16,7 @@ class Header extends Component {
             <span className="icon-bar"></span>
         </button>
         <a className="navbar-brand" href="/">
-             
+        <i className="fa fa-bold"></i>
         </a>
         </div>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
